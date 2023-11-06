@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__title">
+                <p>Реалити шоу от компании c собственными франшизами</p>
+                <h1>Запусти бизнес в Карараганде на <br>
+                    <span>10 ФРАНШИЗАХ</span>
+                </h1>
+            </div>
+        </header>
+        <section class="content">
+            <div class="content__man">
+                <div class="livet livet1"><img src="./src/img/blur.png" alt=""></div>
+                <div class="livet livet2"><img src="./src/img/blur2.png" alt=""></div>
+                <div class="content__text">
+
+                    <p>
+                        Смотри как в режиме реального времени ребята заработают 1,5 млн тг чистыми на 10 нишах за 6
+                        недель.
+                    </p>
+
+                </div>
+            </div>
+            <div class="shadow"></div>
+            <div class="content__cards">
+                <div class="content__card">
+                    <div class="content__card-text">
+                        <span>Закрытая <br>
+                            группа</span>
+                        <div>01</div>
+                    </div>
+                    <p>Реалити шоу <br> открытия бизнесов</p>
+                </div>
+                <div class="content__card">
+                    <div class="content__card-text">
+                        <span>Персональные
+                            разборы</span>
+                        <div>02</div>
+                    </div>
+                    <p>Секреты запусков <br> бизнесов</p>
+                </div>
+                <div class="content__card">
+                    <div class="content__card-text">
+                        <span>Онлайн
+                            трансляции</span>
+                        <div>03</div>
+                    </div>
+                    <p>Техники по созданию <br> своего дела</p>
+                </div>
+            </div>
+            <div class="content__btn">
+                <div class="timer" id="timer">
+                    <span>Осталось:</span>
+                    <span style="display: none;" class="days"></span>
+                    <span class="hours"></span>
+                    <span>Часов</span>
+                    <span class="minutes"></span>
+                    <span>Минут</span>
+                    <span class="seconds"></span>
+                    <span>Секунд</span>
+
+                </div>
+                <div class="btn">
+                    <button class="btn-2" id="blue__btn">ПОПАСТЬ БЕСПЛАТНО</button>
+                </div>
+            </div>
+            <div class="content__info">
+                <h4>Реалити проводит, основатель:</h4>
+                <div class="info__inner">
+                    <div class="content__info-logo">
+                        <h2>РИНАДЖИ</h2>
+                        <div class="tg"> <img src="./src/img/icon__blue.png" alt="">
+                            <span>
+                                <a>@rinadzhi</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content__info-list">
+                        <ul>
+                            <li>Коворкинг центра "Бизнес фабрика" 1800 м2</li>
+                            <li> "Парк Дэпо" 4 ГА</li>
+                            <li>10 традиционных бизнесов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__text">
+                <ul>
+                    <li>Единственная в Казахстане компания с собственными</li>
+                    <li> 10 фрнашизами с лидогенерацией (орагнизации заявок)</li>
+                </ul>
+                <ul>
+                    <li>ТОО "FRANSHIZI.PRO"</li>
+                    <li> БИН 123456789123</li>
+                    <li> ОГРН 121312323443</li>
+                    <li>Казахстан, г. Алматы, проспект Назарбаева 248, 5 этаж</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="popup">
+        <div class="popup__body">
+            <!-- <div class="burgar"><a href="#"><img src="./src/img/burgar.png" alt=""></a></div> -->
+            <section class="popup_title">
+                <h2>Вступите <br> бесплатно в наше <br> сообщество</h2>
+            </section>
+            <section class="content_form">
+                <!-- <button class="btn__close">X</button> -->
+                <form action="" method="post">
+                    <div class="form__block">
+                        <label for="">Введите имя</label>
+                        <input placeholder="Имя Фамилия" type="text">
+                    </div>
+                    <div class="form__block input__tel">
+                        <label for="">Введите номер телефона</label>
+                        <input placeholder="+7 999 888 77 55" type="text">
+                    </div>
+                    <button class="btn-2">Вступить бесплатно</button>
+                </form>
+            </section>
+            <section class="popup__chek">
+                <div class="check">
+                    <input type="checkbox" id="fb" name="answer1" value="Facebook">
+                    <label for="fb"><span></span></label>
+                </div>
+                <p>Я даю согласие на обработку персональных данных и соглашаюсь c
+                    <a href="#">политикой конфиденциальности</a>
+                </p>
+            </section>
+        </div>
+    </div>
+    <script>
+        const popup = document.querySelector('.popup');
+        const btn = document.getElementById('blue__btn');
+        const btnClose = document.querySelector('.btn__close');
+
+        btn.addEventListener('click', () => {
+            popup.style.display = 'block';
+            // document.body.style.overflow = 'hidden';
+            window.scrollTo(0, 0);
+        });
+
+        // btnClose.addEventListener('click', () => {
+        //     popup.style.display = 'none';
+        // })
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

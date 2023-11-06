@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./src/fonts/Gilroy-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GilroyLight";
+  src: url("./src/fonts//Gilroy-Light.ttf") format("truetype");
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  border: 0px;
+}
+
+#blue__btn {
+  color: #000;
+}
+
+@media (max-width: 420.999px) {
+  body {
+    background-color: #0B0B0D;
+    color: white;
+    font-family: "GilroyLight", sans-serif;
+    position: relative;
+  }
+  .wrapper {
+    position: relative;
+    background-color: #0B0B0D;
+    overflow: hidden;
+  }
+  .wrapper::before {
+    animation-name: befforWrapper;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    top: 0;
+    margin-right: -40px;
+    overflow: hidden;
+    right: -20px;
+    content: "";
+    background-image: url(./src/img/Vector.png);
+  }
+  @keyframes befforWrapper {
+    0% {
+      margin-right: -40px;
+      margin-top: 0px;
+    }
+    100% {
+      margin-right: -90px;
+      margin-top: -60px;
+    }
+  }
+  .header {
+    padding: 0px 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .header__title p {
+    font-size: 12px;
+    color: #B8B8B8;
+    padding-bottom: 20px;
+  }
+  .header__title h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .header__title h1 span {
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "GilroyBold", sans-serif;
+  }
+  .content {
+    position: relative;
+    padding: 0px 20px;
+  }
+  .content__man {
+    background-image: url(./src/img/man2.png);
+    height: 375px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .content__man::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    left: -30px;
+    bottom: 0px;
+    box-shadow: 0px -21px 5px -5px rgba(11, 11, 13, 0.96) inset;
+  }
+  .content__man .livet {
+    position: absolute;
+  }
+  .content__man .livet1 {
+    animation-name: livet1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    top: 70px;
+    left: 0px;
+  }
+  @keyframes livet1 {
+    0% {
+      top: 70px;
+    }
+    100% {
+      top: 85px;
+    }
+  }
+  .content__man .livet2 {
+    animation-name: livet2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    top: 292px;
+    right: 15px;
+  }
+  @keyframes livet2 {
+    0% {
+      top: 292px;
+    }
+    100% {
+      top: 307px;
+    }
+  }
+  .content__text {
+    position: absolute;
+    width: 236px;
+    height: 205px;
+    background-image: url(./src/img/fon.png);
+    font-size: 14px;
+    top: 135px;
+    left: -20px;
+  }
+  .content__text p {
+    position: relative;
+    top: 53px;
+    left: 35px;
+    width: 172px;
+  }
+  .content__cards {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content__cards p {
+    padding: 5px;
+  }
+  .content__card {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.45);
+    width: 112px;
+    border-radius: 10px;
+    background-color: #252727;
+    font-size: 10px;
+    color: #B8B8B8;
+  }
+  .content__card:nth-child(2) {
+    margin: 0px 10px;
+  }
+  .content__card span {
+    font-size: 12px;
+    font-family: GilroyLight, sans-serif;
+  }
+  .content__card-text {
+    color: #fff;
+    padding: 5px;
+    padding-top: 8px;
+    box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.73);
+    width: 112px;
+    position: relative;
+    border-radius: 10px;
+  }
+  .content__card-text div {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    font-size: 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 3px;
+    width: 15px;
+  }
+  .content__btn .btn {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes move-light {
+    0% {
+      left: -100%;
+      opacity: 0.5;
+    }
+    50% {
+      left: 50%;
+      opacity: 1;
+    }
+    100% {
+      left: 200%;
+      opacity: 0.5;
+    }
+  }
+  .content__btn .btn button {
+    display: flex;
+    align-items: center;
+    width: -moz-max-content;
+    width: max-content;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #10FFFF;
+    padding: 35px 57px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px -1px 30px 10px rgba(255, 255, 255, 0.28);
+  }
+  .content__btn .btn button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(0em) skewX(-45deg);
+    animation: move-light 1.8s linear infinite;
+  }
+  .content__btn .btn button:hover {
+    background-color: #10FFFF;
+    color: #fff;
+  }
+  .content__info {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-color: #252727;
+  }
+  .content__info h4 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .content__info-logo {
+    padding-right: 0px;
+    overflow: hidden;
+    padding: 5px 0px;
+  }
+  .content__info-logo h2 {
+    color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    transform: scale(0.53, 1.1);
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -50px;
+  }
+  .content__info-list {
+    background-color: #303031;
+    border-radius: 10px;
+    padding: 5px;
+    height: 74px;
+    color: #B8B8B8;
+  }
+  .content__info-list ul {
+    padding-left: 20px;
+    font-size: 11px;
+  }
+  .content__info-list ul li {
+    margin-bottom: 5px;
+  }
+  .timer {
+    text-align: center;
+    color: #B8B8B8;
+    font-size: 12px;
+    padding: 20px 0px;
+  }
+  .info__inner {
+    display: flex;
+    margin-left: 10px;
+  }
+  .info__inner .tg {
+    top: -6px;
+    position: relative;
+    background-color: #303031;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    max-width: 75px;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .info__inner .tg img {
+    height: 10px;
+  }
+  .info__inner .tg a {
+    text-decoration: none;
+    color: #B8B8B8;
+  }
+  .footer {
+    padding: 20px 20px;
+    padding-bottom: 0px;
+    background-color: black;
+    color: #797979;
+    text-align: center;
+    font-size: 10px;
+  }
+  .footer__text ul {
+    list-style: none;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .footer__text ul li {
+    padding-bottom: 4px;
+  }
+  .popup {
+    -webkit-text-size-adjust: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0B0B0D;
+    display: none;
+    overflow: hidden;
+  }
+  .popup .burgar {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .popup .popup_title {
+    padding: 55px 0px;
+  }
+  .popup .popup_title h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "GilroyBold", sans-serif;
+  }
+  .popup .popup__chek {
+    color: #888888;
+    padding: 32px 20px;
+    font-size: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .popup .popup__chek .check {
+    position: relative;
+    top: -3px;
+  }
+  .popup .popup__chek input {
+    display: none;
+  }
+  .popup .popup__chek input[type=checkbox] + label span {
+    background-color: #067778;
+    font-size: 9pt;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 0.25em;
+    margin: 4px 8px 8px 8px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .popup .popup__chek input[type=checkbox]:checked + label span::after {
+    content: url(./src/img/Galka2.svg);
+    position: relative;
+    left: -1px;
+    top: -2px;
+  }
+  .popup .popup__chek a {
+    color: #006060;
+  }
+  .content_form {
+    -webkit-text-size-adjust: none;
+    position: relative;
+    color: #888888;
+    padding: 0px 20px;
+  }
+  .content_form .input__tel {
+    position: relative;
+  }
+  .content_form .input__tel::after {
+    background-size: cover;
+    position: absolute;
+    background-image: url(./src/img/flag-kazakhstana-64x64.png);
+    content: "-";
+    width: 25px;
+    height: 25px;
+    top: 40px;
+    left: 8px;
+  }
+  .content_form input {
+    font-size: 16px;
+    position: relative;
+    text-indent: 10%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #888888;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0px;
+    height: 51px;
+    color: #888888;
+  }
+  .content_form input:focus {
+    outline: 0px;
+  }
+  .content_form input::-moz-placeholder {
+    margin-right: 25px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .content_form input::placeholder {
+    margin-right: 25px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .content_form button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: -moz-max-content;
+    width: max-content;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0B0B0D;
+    text-transform: uppercase;
+    background-color: #10FFFF;
+    padding: 18px 80px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 9px rgba(16, 255, 255, 0.24);
+  }
+  .form__block {
+    padding-bottom: 20px;
+  }
+  .form__block label {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
